@@ -14,3 +14,7 @@ class CalculatorTests(unittest.TestCase):
         self.assertEqual(cube(-3), -27)
     def test_cube_zero(self):
         self.assertEqual(cube(0), 0)
+    def test_cube_positive_eleven(self):
+        self.assertEqual(cube(11), 1331)
+    def test_cube_negative_eleven(self):
+        self.assertEqual(cube(-11), -1331)
